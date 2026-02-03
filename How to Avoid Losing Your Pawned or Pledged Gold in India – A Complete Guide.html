@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SiyaRam - Shop the best gold and diamond</title>
+    <link rel="icon" type="image/x-icon" href="./images/lo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="lightbox.css" />
+    <link rel="stylesheet" href="./css/Slider.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+
+    <style>
+        .about-hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("./images/cforg.jpg") center/cover no-repeat;
+  padding: 120px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.about-hero h1 {
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.about-hero p {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #facc15;
+}
+
+.about-section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.about-text p {
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: #374151;
+  margin-bottom: 14px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+.blog-detail {
+  padding: 80px 20px;
+  background: #f9fafb;
+}
+
+.blog-wrapper {
+  max-width: 900px;
+  margin: auto;
+}
+
+.blog-header h1 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.blog-header h1 span {
+  font-size: 22px;
+  color: #b8860b;
+  display: block;
+}
+
+.blog-intro {
+  font-size: 18px;
+  color: #4b5563;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.blog-header img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.blog-content h2 {
+  font-size: 26px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.blog-content p,
+.blog-content li {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #374151;
+}
+
+.blog-content ul,
+.blog-content ol {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.content-image {
+  width: 100%;
+  border-radius: 18px;
+  margin: 40px 0;
+}
+
+.blog-highlight {
+  background: #fff7ed;
+  border-left: 6px solid #f59e0b;
+  padding: 18px 22px;
+  border-radius: 12px;
+  margin: 30px 0;
+}
+
+.blog-benefits {
+  background: #ecfdf5;
+  padding: 25px;
+  border-radius: 16px;
+  margin: 30px 0;
+}
+
+.blog-benefits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.blog-benefits li {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #065f46;
+}
+
+.blog-cta {
+  background: #111827;
+  color: #ffffff;
+  padding: 50px;
+  border-radius: 22px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.blog-cta h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.blog-cta p {
+  color: #d1d5db;
+  margin-bottom: 25px;
+}
+
+.blog-cta a {
+  display: inline-block;
+  background: #facc15;
+  color: #000;
+  padding: 14px 34px;
+  border-radius: 999px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+    </style>
+    <!-- =================================================== Navbar =================================================-->
+      <nav class="navbar">
+  <!-- Mobile Sidebar -->
+  <ul class="sidebar">
+    <li onclick="hideSidebar()">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+        </svg>
+      </a>
+    </li>
+
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="service.html">Services</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li> <a href="index.html#contact">Contact</a></li>
+  </ul>
+
+  <!-- Main Navbar -->
+  <ul>
+    <!-- Logo -->
+    <li>
+      <a href="index.html">
+        <img src="./images/logo.png" alt="Logo" />
+      </a>
+    </li>
+
+    <!-- Desktop Links -->
+    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+    <li class="hideOnMobile"><a href="about.html">About</a></li>
+    <li class="hideOnMobile"><a href="service.html">Services</a></li>
+    <li class="hideOnMobile"><a href="blog.html">Blog</a></li>
+    <li class="hideOnMobile"> <a href="index.html#contact">Contact</a></li>
+
+    <!-- Mobile Menu Button -->
+    <li class="menu-button" onclick="showSidebar()">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+<section class="about-hero">
+  <div class="about-hero-content">
+        <h1>Our Blog</h1>
+
+    <p>
+      A Name Built on Trust, Transparency & Responsibility
+    </p>
+  </div>
+</section>
+
+
+<section class="blog-detail">
+  <div class="blog-wrapper">
+
+    <!-- Blog Header -->
+    <header class="blog-header">
+      <h1>
+        How to Avoid Losing Your Pawned or Pledged Gold in India
+        <span>A Complete Guide</span>
+      </h1>
+      <p class="blog-intro">
+        Practical steps, legal awareness, and recovery options to protect your gold
+        from auctions and permanent loss.
+      </p>
+    </header>
+
+    <!-- Featured Image -->
+    <div class="blog-featured-image">
+      <img src="images/goldpawn.jpg" alt="Avoid Losing Pawned Gold in India">
+    </div>
+
+    <!-- Blog Content -->
+    <article class="blog-content">
+
+      <h2>Introduction</h2>
+      <p>
+        In India, gold is more than a financial asset—it is an emotional and cultural
+        safeguard passed down through generations. Yet during financial emergencies,
+        many individuals and business owners pawn or pledge gold to banks, NBFCs, or
+        private lenders.
+      </p>
+      <p>
+        While gold loans offer quick liquidity, poor loan management can result in
+        permanent loss of gold through auction. Every year, thousands lose their gold
+        simply due to lack of awareness, delayed payments, or unclear loan terms.
+      </p>
+      <p>
+        This guide explains how to avoid losing your pawned or pledged gold, understand
+        lender practices, and take timely action—including professional recovery
+        assistance when required.
+      </p>
+
+      <h2>Understanding Why People Lose Their Pawned Gold</h2>
+
+      <h3>1. Missed Repayment Deadlines</h3>
+      <p>
+        Most gold loans have short tenures (6–12 months). Many borrowers assume extensions
+        are automatic—but they are not.
+      </p>
+
+      <h3>2. Accumulated Interest Burden</h3>
+      <p>
+        Interest continues to accumulate. When total dues exceed the gold’s loan value,
+        lenders initiate auction procedures.
+      </p>
+
+      <h3>3. Lack of Communication</h3>
+      <p>
+        Ignoring reminder calls, letters, or auction notices is a common and costly mistake.
+      </p>
+
+      <h3>4. Unclear Loan Agreements</h3>
+      <p>
+        Many borrowers sign agreements without understanding interest rates, penalty
+        clauses, or auction timelines.
+      </p>
+
+      <h3>5. Financial Constraints</h3>
+      <p>
+        Temporary cash flow issues prevent borrowers from arranging funds on time.
+      </p>
+
+      <!-- Inline Image -->
+      <div class="blog-inline-image">
+        <img src="images/goldsecure.jpg" alt="Gold Loan Auction Risk">
+        <span>Ignoring early warnings increases auction risk</span>
+      </div>
+
+      <h2>Pawn vs Pledge vs Mortgage — Know What You Signed</h2>
+
+      <h3>Pawn / Pledge</h3>
+      <ul>
+        <li>Gold is physically handed over to the lender</li>
+        <li>Ownership remains with the borrower</li>
+        <li>Gold is returned only after full settlement</li>
+      </ul>
+
+      <h3>Mortgage (Gold as Security)</h3>
+      <ul>
+        <li>Gold may be part of a broader financial agreement</li>
+        <li>Recovery may involve additional legal documentation</li>
+      </ul>
+
+      <p>
+        In all cases, failure to repay allows the lender to auction the gold legally
+        after proper notice.
+      </p>
+
+      <h2>Early Warning Signs That Your Gold Is at Risk</h2>
+      <ul>
+        <li>Repeated reminder calls or SMS</li>
+        <li>“Final reminder” or “auction” notices</li>
+        <li>Interest nearing or exceeding principal</li>
+        <li>Loan tenure already expired</li>
+        <li>Pressure from private lenders</li>
+      </ul>
+
+      <p><strong>Ignoring these signs is the biggest mistake borrowers make.</strong></p>
+
+      <h2>How to Avoid Losing Your Pawned or Pledged Gold</h2>
+
+      <h3>1. Read the Agreement Carefully (Even After Signing)</h3>
+      <ul>
+        <li>Re-read your agreement</li>
+        <li>Note tenure, interest, and auction clauses</li>
+        <li>Understand penalty and grace period</li>
+      </ul>
+
+      <h3>2. Track Repayment Dates Religiously</h3>
+      <p>
+        Set mobile reminders, calendar alerts, or WhatsApp reminders. Many lenders
+        prepare auctions within 30–60 days after expiry.
+      </p>
+
+      <h3>3. Pay at Least the Interest If You Can’t Pay Fully</h3>
+      <ul>
+        <li>Partial interest payment can stop auction</li>
+        <li>Keeps the loan active</li>
+        <li>Shows intent to repay</li>
+      </ul>
+
+      <h3>4. Communicate With the Lender Early</h3>
+      <p>
+        Most lenders prefer settlement over auction. Silence is often treated as default.
+      </p>
+
+      <h2>What If You Cannot Arrange Funds?</h2>
+      <p>
+        This is where most borrowers panic—but you still have options.
+        <strong>Do not wait for auction.</strong>
+      </p>
+
+      <h3>Professional Gold Recovery Assistance</h3>
+      <p>
+        A professional gold recovery service can step in to prevent permanent loss by:
+      </p>
+      <ul>
+        <li>Providing financial assistance</li>
+        <li>Settling dues with the lender</li>
+        <li>Recovering gold legally</li>
+        <li>Working on transparent agreements</li>
+      </ul>
+
+      <h2>Role of Ethical Gold Recovery Services</h2>
+      <p>
+        Services like <strong>Sri Krishna Gold Recovery</strong> act as a financial bridge,
+        not a lender.
+      </p>
+
+      <ul>
+        <li>Evaluate outstanding dues</li>
+        <li>Assess gold value and feasibility</li>
+        <li>Arrange funds to release gold</li>
+        <li>Recover gold with documentation</li>
+      </ul>
+
+      <h2>Auction Process — What You Must Know</h2>
+
+      <h3>Before Auction</h3>
+      <ul>
+        <li>Lender issues notice</li>
+        <li>Grace period is provided</li>
+        <li>Borrower has right to settle</li>
+      </ul>
+
+      <h3>During Auction</h3>
+      <ul>
+        <li>Gold is sold to recover dues</li>
+        <li>Excess amount may not be returned</li>
+      </ul>
+
+      <h3>After Auction</h3>
+      <p><strong>Gold ownership is lost permanently.</strong></p>
+
+      <h2>Common Myths That Cause Gold Loss</h2>
+      <ul>
+        <li>“The lender will wait forever”</li>
+        <li>“Gold price increase will cover dues”</li>
+        <li>“Auction notices are just formalities”</li>
+        <li>“I’ll arrange money later”</li>
+      </ul>
+
+      <h2>Best Practices to Protect Your Gold</h2>
+      <ul>
+        <li>Keep all loan receipts</li>
+        <li>Monitor gold market value</li>
+        <li>Avoid multiple pledges</li>
+        <li>Maintain lender communication</li>
+        <li>Seek professional help early</li>
+      </ul>
+
+      <h2>Legal Rights of Gold Borrowers in India</h2>
+      <ul>
+        <li>Right to auction notice</li>
+        <li>Right to fair valuation</li>
+        <li>Right to settlement before sale</li>
+        <li>Right to proper documentation</li>
+      </ul>
+
+      <h2>Why Timing Is Everything in Gold Recovery</h2>
+      <p>
+        Most gold loss happens due to delayed decisions—not lack of money.
+        Early action gives more negotiation power and recovery options.
+      </p>
+
+      <h2>Conclusion</h2>
+      <p>
+        Losing gold is not inevitable. With awareness, early action, and the right
+        support, pawned or pledged gold can be recovered legally and ethically.
+      </p>
+
+    </article>
+
+    <!-- CTA -->
+    <div class="blog-cta">
+      <h3>Protect Your Gold. Protect Your Future.</h3>
+      <p>
+        If your gold is at risk due to financial constraints or approaching auction,
+        Sri Krishna Gold Recovery can help you recover it safely and legally.
+      </p>
+      <p>
+        📞 <strong>7904325610</strong><br>
+        ✉️ <strong>srikrishnagoldrecovery@gmail.com</strong>
+      </p>
+      <a href="index.html#contact" class="blog-cta-btn">
+        Get Immediate Assistance
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- ===================================================== Footer ===============================================-->
+  <div id="footer"></div>
+     <div class="container-fliud mt-4 pb-5">
+        <div
+          class="d-flex justify-content-between align-items-center flex-wrap text-center text-md-start"
+        >
+          <p class="mb-0">
+            © <span>Copyright</span>
+            <strong class="px-1 sitename">E2o Tech</strong>
+            <span>All Rights Reserved</span>
+          </p>
+
+          <div class="credits mb-0 text-center text-white d-flex justify-content-center">
+  <p class="mb-0 me-3 text-dark">
+    Made with&nbsp;
+    <svg
+      class="bi bi-suit-heart-fill"
+      xmlns="http://www.w3.org/2000/svg"
+      width="12"
+      height="12"
+      fill="#fd0d0d"
+      viewBox="0 0 16 16">
+      <path
+        d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"
+      ></path>
+    </svg>
+    &nbsp;by&nbsp;
+    <a
+      class="fw-bold text-info"
+      href="https://e2o.in/"
+      target="_blank"
+      >E2o Tech</a
+    >
+  </p>
+</div>
+        </div>
+      </div>
+    <!-- WhatsApp -->
+    <div class="whatsapp_float">
+      <a href="https://wa.me/919881852058">
+        <img src="./images/whatsapp.webp" alt="" />
+      </a>
+    </div>
+    <!-- =================================================== Script Link =============================================-->
+    <script src="./js/Slider.min.js"></script>
+    <script src="https://kit.fontawesome.com/8c8aa2002d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="lightbox-plus-jquery.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

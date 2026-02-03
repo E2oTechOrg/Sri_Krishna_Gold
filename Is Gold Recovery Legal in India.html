@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SiyaRam - Shop the best gold and diamond</title>
+    <link rel="icon" type="image/x-icon" href="./images/lo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="lightbox.css" />
+    <link rel="stylesheet" href="./css/Slider.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+
+    <style>
+        .about-hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("./images/cforg.jpg") center/cover no-repeat;
+  padding: 120px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.about-hero h1 {
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.about-hero p {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #facc15;
+}
+
+.about-section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.about-text p {
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: #374151;
+  margin-bottom: 14px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+.blog-detail {
+  padding: 80px 20px;
+  background: #f9fafb;
+}
+
+.blog-wrapper {
+  max-width: 900px;
+  margin: auto;
+}
+
+.blog-header h1 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.blog-header h1 span {
+  font-size: 22px;
+  color: #b8860b;
+  display: block;
+}
+
+.blog-intro {
+  font-size: 18px;
+  color: #4b5563;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.blog-header img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.blog-content h2 {
+  font-size: 26px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.blog-content p,
+.blog-content li {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #374151;
+}
+
+.blog-content ul,
+.blog-content ol {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.content-image {
+  width: 100%;
+  border-radius: 18px;
+  margin: 40px 0;
+}
+
+.blog-highlight {
+  background: #fff7ed;
+  border-left: 6px solid #f59e0b;
+  padding: 18px 22px;
+  border-radius: 12px;
+  margin: 30px 0;
+}
+
+.blog-benefits {
+  background: #ecfdf5;
+  padding: 25px;
+  border-radius: 16px;
+  margin: 30px 0;
+}
+
+.blog-benefits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.blog-benefits li {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #065f46;
+}
+
+.blog-cta {
+  background: #111827;
+  color: #ffffff;
+  padding: 50px;
+  border-radius: 22px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.blog-cta h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.blog-cta p {
+  color: #d1d5db;
+  margin-bottom: 25px;
+}
+
+.blog-cta a {
+  display: inline-block;
+  background: #facc15;
+  color: #000;
+  padding: 14px 34px;
+  border-radius: 999px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+    </style>
+    <!-- =================================================== Navbar =================================================-->
+      <nav class="navbar">
+  <!-- Mobile Sidebar -->
+  <ul class="sidebar">
+    <li onclick="hideSidebar()">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+        </svg>
+      </a>
+    </li>
+
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="service.html">Services</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li> <a href="index.html#contact">Contact</a></li>
+  </ul>
+
+  <!-- Main Navbar -->
+  <ul>
+    <!-- Logo -->
+    <li>
+      <a href="index.html">
+        <img src="./images/logo.png" alt="Logo" />
+      </a>
+    </li>
+
+    <!-- Desktop Links -->
+    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+    <li class="hideOnMobile"><a href="about.html">About</a></li>
+    <li class="hideOnMobile"><a href="service.html">Services</a></li>
+    <li class="hideOnMobile"><a href="blog.html">Blog</a></li>
+    <li class="hideOnMobile"> <a href="index.html#contact">Contact</a></li>
+
+    <!-- Mobile Menu Button -->
+    <li class="menu-button" onclick="showSidebar()">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+<section class="about-hero">
+  <div class="about-hero-content">
+        <h1>Our Blog</h1>
+
+    <p>
+      A Name Built on Trust, Transparency & Responsibility
+    </p>
+  </div>
+</section>
+
+
+<section class="blog-detail">
+  <div class="blog-wrapper">
+
+    <!-- Blog Header -->
+    <header class="blog-header">
+      <h1>
+        Is Gold Recovery Legal in India? Complete Compliance & Legal Guide (2026)
+      </h1>
+      <p class="blog-intro">
+        Facing gold loan pressure often raises one critical question—Is gold
+        recovery legal in India? This guide explains the legal truth, compliance
+        framework, and how borrowers can protect their rights safely.
+      </p>
+    </header>
+
+    <!-- Featured Image -->
+    <div class="blog-featured-image">
+      <img src="images/cash_for_gold.jpg" alt="Is Gold Recovery Legal in India">
+    </div>
+
+    <!-- Blog Content -->
+    <article class="blog-content">
+
+      <h2>Introduction</h2>
+      <p>
+        One of the most common questions people ask when facing gold loan pressure
+        is:
+        <strong>“Is gold recovery legal in India?”</strong>
+      </p>
+
+      <p>
+        This concern usually arises when borrowers are unable to repay gold loans,
+        receive auction notices, fear losing family gold, or are approached by
+        recovery service providers.
+      </p>
+
+      <p>
+        Due to lack of awareness, many people hesitate to seek help—fearing legal
+        trouble or scams. The truth is that gold recovery is legal in India when
+        done ethically, transparently, and within the framework of Indian law.
+      </p>
+
+      <h2>What Is Gold Recovery (Legally Speaking)?</h2>
+      <p>
+        Gold recovery refers to a lawful financial facilitation process where a
+        third party assists a borrower in:
+      </p>
+      <ul>
+        <li>Settling outstanding gold loan dues</li>
+        <li>Releasing gold from pawn, pledge, mortgage, or security</li>
+        <li>Preventing auction</li>
+        <li>Recovering gold legally from the lender</li>
+      </ul>
+
+      <p>
+        Importantly, ownership of gold always remains with the borrower, recovery
+        happens only after lawful settlement, and no force or coercion is involved.
+      </p>
+
+      <h2>Is Gold Recovery Legal in India? (Clear Answer)</h2>
+      <p><strong>Yes—gold recovery is legal in India, provided:</strong></p>
+      <ul>
+        <li>The gold is legally owned by the borrower</li>
+        <li>Recovery is done with borrower consent</li>
+        <li>Outstanding dues are settled with the lender</li>
+        <li>Proper documentation and agreements exist</li>
+        <li>No banking or criminal laws are violated</li>
+      </ul>
+
+      <p>
+        Gold recovery does not mean illegal seizure or bypassing lenders.
+      </p>
+
+      <h2>Legal Foundations Supporting Gold Recovery</h2>
+
+      <h3>1. Indian Contract Principles</h3>
+      <p>
+        Gold loans are contractual agreements. Any third party can assist in
+        repayment or settlement with borrower authorization. Once the lender is
+        paid, contractual obligations are fulfilled.
+      </p>
+
+      <h3>2. Borrower’s Right to Repay</h3>
+      <p>
+        Borrowers have the legal right to repay loans anytime before auction using
+        funds from any lawful source. Lenders cannot restrict repayment origin.
+      </p>
+
+      <h3>3. Auction Prevention Is Legal</h3>
+      <p>
+        Settling dues before auction to prevent sale is fully legal and aligned
+        with borrower protection principles.
+      </p>
+
+      <h2>What Gold Recovery Is NOT (Important Clarification)</h2>
+      <ul>
+        <li>❌ Illegal money lending</li>
+        <li>❌ Forced possession of gold</li>
+        <li>❌ Bypassing lender systems</li>
+        <li>❌ Interest-based lending</li>
+        <li>❌ Asset seizure</li>
+      </ul>
+
+      <p>
+        Any service claiming otherwise should be avoided.
+      </p>
+
+      <h2>Legal Difference: Gold Recovery vs Money Lending</h2>
+
+      <div class="comparison-table">
+        <div>
+          <h4>Gold Recovery</h4>
+          <ul>
+            <li>No interest charged</li>
+            <li>No ownership transfer</li>
+            <li>Percentage-based revenue</li>
+            <li>No new loan created</li>
+            <li>Asset protected</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Money Lending</h4>
+          <ul>
+            <li>Interest charged</li>
+            <li>Loan-based obligation</li>
+            <li>Interest-driven revenue</li>
+            <li>New debt created</li>
+            <li>Higher asset risk</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Compliance Requirements in Ethical Gold Recovery</h2>
+      <ul>
+        <li>Written agreements</li>
+        <li>Transparent, upfront percentage terms</li>
+        <li>Borrower authorization</li>
+        <li>Direct settlement with lenders</li>
+        <li>Confidential handling of client data</li>
+      </ul>
+
+      <h2>Red Flags: What Is Illegal or Unsafe</h2>
+      <ul>
+        <li>Promises of guaranteed profit</li>
+        <li>Demanding gold possession upfront</li>
+        <li>Refusing written documentation</li>
+        <li>Illegal cash handling</li>
+        <li>Threats or pressure tactics</li>
+      </ul>
+
+      <p>
+        Legitimate recovery services never operate in secrecy.
+      </p>
+
+      <h2>Role of Lenders in Gold Recovery</h2>
+      <p>
+        Banks, NBFCs, and pawn brokers are legally bound to release gold once dues
+        are settled. Recovery simply closes the loan—it does not harm lenders.
+      </p>
+
+      <h2>Borrower Rights During Recovery</h2>
+      <ul>
+        <li>Right to know settlement amount</li>
+        <li>Right to receive payment receipts</li>
+        <li>Right to inspect recovered gold</li>
+        <li>Right to retain ownership</li>
+        <li>Right to legal clarification</li>
+      </ul>
+
+      <h2>Gold Recovery in Private Pawn & Pledge Cases</h2>
+      <p>
+        Even with private pawn brokers, recovery remains legal as long as written
+        agreements are honored and dues are settled.
+      </p>
+
+      <h2>Why Legal Awareness Matters</h2>
+      <p>
+        Many borrowers lose gold due to fear, misinformation, delay, or wrong
+        advice—not due to law.
+      </p>
+
+      <h2>Gold Recovery in 2026 – Regulatory Awareness</h2>
+      <p>
+        In 2026, borrowers are more informed, ethical recovery services are
+        preferred, and transparent models are becoming the standard.
+      </p>
+
+      <h2>When Should You Consider Gold Recovery?</h2>
+      <ul>
+        <li>Loan tenure has expired</li>
+        <li>Interest is unmanageable</li>
+        <li>Auction notice is issued</li>
+        <li>Funds are unavailable</li>
+        <li>Gold value still exceeds dues</li>
+      </ul>
+
+      <h2>Conclusion</h2>
+      <p>
+        Gold recovery is legal, ethical, and compliant in India when done
+        responsibly. It exists to protect borrowers from permanent asset loss
+        during temporary financial hardship.
+      </p>
+
+      <p>
+        Awareness, documentation, timing, and choosing ethical service providers
+        make all the difference.
+      </p>
+
+    </article>
+
+    <!-- CTA -->
+    <div class="blog-cta">
+      <h3>Need Legal & Ethical Gold Recovery Guidance?</h3>
+      <p>
+        Sri Krishna Gold Recovery follows transparent, compliant practices to help
+        borrowers recover gold safely and legally.
+      </p>
+      <p>
+        📞 <strong>7904325610</strong><br>
+        ✉️ <strong>srikrishnagoldrecovery@gmail.com</strong>
+      </p>
+      <a href="index.html#contact" class="blog-cta-btn">
+        Get Legal Guidance Now
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- ===================================================== Footer ===============================================-->
+  <div id="footer"></div>
+     <div class="container-fliud mt-4 pb-5">
+        <div
+          class="d-flex justify-content-between align-items-center flex-wrap text-center text-md-start"
+        >
+          <p class="mb-0">
+            © <span>Copyright</span>
+            <strong class="px-1 sitename">E2o Tech</strong>
+            <span>All Rights Reserved</span>
+          </p>
+
+          <div class="credits mb-0 text-center text-white d-flex justify-content-center">
+  <p class="mb-0 me-3 text-dark">
+    Made with&nbsp;
+    <svg
+      class="bi bi-suit-heart-fill"
+      xmlns="http://www.w3.org/2000/svg"
+      width="12"
+      height="12"
+      fill="#fd0d0d"
+      viewBox="0 0 16 16">
+      <path
+        d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"
+      ></path>
+    </svg>
+    &nbsp;by&nbsp;
+    <a
+      class="fw-bold text-info"
+      href="https://e2o.in/"
+      target="_blank"
+      >E2o Tech</a
+    >
+  </p>
+</div>
+        </div>
+      </div>
+    <!-- WhatsApp -->
+    <div class="whatsapp_float">
+      <a href="https://wa.me/919881852058">
+        <img src="./images/whatsapp.webp" alt="" />
+      </a>
+    </div>
+    <!-- =================================================== Script Link =============================================-->
+    <script src="./js/Slider.min.js"></script>
+    <script src="https://kit.fontawesome.com/8c8aa2002d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="lightbox-plus-jquery.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SiyaRam - Shop the best gold and diamond</title>
+    <link rel="icon" type="image/x-icon" href="./images/lo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="lightbox.css" />
+    <link rel="stylesheet" href="./css/Slider.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+
+    <style>
+        .about-hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("./images/cforg.jpg") center/cover no-repeat;
+  padding: 120px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.about-hero h1 {
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.about-hero p {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #facc15;
+}
+
+.about-section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.about-text p {
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: #374151;
+  margin-bottom: 14px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+.blog-detail {
+  padding: 80px 20px;
+  background: #f9fafb;
+}
+
+.blog-wrapper {
+  max-width: 900px;
+  margin: auto;
+}
+
+.blog-header h1 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.blog-header h1 span {
+  font-size: 22px;
+  color: #b8860b;
+  display: block;
+}
+
+.blog-intro {
+  font-size: 18px;
+  color: #4b5563;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.blog-header img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.blog-content h2 {
+  font-size: 26px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.blog-content p,
+.blog-content li {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #374151;
+}
+
+.blog-content ul,
+.blog-content ol {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.content-image {
+  width: 100%;
+  border-radius: 18px;
+  margin: 40px 0;
+}
+
+.blog-highlight {
+  background: #fff7ed;
+  border-left: 6px solid #f59e0b;
+  padding: 18px 22px;
+  border-radius: 12px;
+  margin: 30px 0;
+}
+
+.blog-benefits {
+  background: #ecfdf5;
+  padding: 25px;
+  border-radius: 16px;
+  margin: 30px 0;
+}
+
+.blog-benefits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.blog-benefits li {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #065f46;
+}
+
+.blog-cta {
+  background: #111827;
+  color: #ffffff;
+  padding: 50px;
+  border-radius: 22px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.blog-cta h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.blog-cta p {
+  color: #d1d5db;
+  margin-bottom: 25px;
+}
+
+.blog-cta a {
+  display: inline-block;
+  background: #facc15;
+  color: #000;
+  padding: 14px 34px;
+  border-radius: 999px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+    </style>
+    <!-- =================================================== Navbar =================================================-->
+      <nav class="navbar">
+  <!-- Mobile Sidebar -->
+  <ul class="sidebar">
+    <li onclick="hideSidebar()">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+        </svg>
+      </a>
+    </li>
+
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="service.html">Services</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li> <a href="index.html#contact">Contact</a></li>
+  </ul>
+
+  <!-- Main Navbar -->
+  <ul>
+    <!-- Logo -->
+    <li>
+      <a href="index.html">
+        <img src="./images/logo.png" alt="Logo" />
+      </a>
+    </li>
+
+    <!-- Desktop Links -->
+    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+    <li class="hideOnMobile"><a href="about.html">About</a></li>
+    <li class="hideOnMobile"><a href="service.html">Services</a></li>
+    <li class="hideOnMobile"><a href="blog.html">Blog</a></li>
+    <li class="hideOnMobile"> <a href="index.html#contact">Contact</a></li>
+
+    <!-- Mobile Menu Button -->
+    <li class="menu-button" onclick="showSidebar()">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+<section class="about-hero">
+  <div class="about-hero-content">
+        <h1>Our Blog</h1>
+
+    <p>
+      A Name Built on Trust, Transparency & Responsibility
+    </p>
+  </div>
+</section>
+
+<section class="blog-detail">
+  <div class="blog-wrapper">
+
+    <!-- Blog Header -->
+    <header class="blog-header">
+      <h1>
+        Legal Rights of Gold Loan Borrowers in India
+        <span>What Every Borrower Must Know</span>
+      </h1>
+      <p class="blog-intro">
+        Understanding your legal rights can help you avoid unnecessary gold auctions,
+        harassment, and permanent loss of valuable family assets.
+      </p>
+    </header>
+
+    <!-- Featured Image -->
+    <div class="blog-featured-image">
+      <img src="images/pledge.webp" alt="Legal Rights of Gold Loan Borrowers in India">
+    </div>
+
+    <!-- Blog Content -->
+    <article class="blog-content">
+
+      <h2>Introduction</h2>
+      <p>
+        Gold loans are one of the most commonly used financial tools in India. From medical
+        emergencies to business needs, millions of Indians pledge or pawn gold every year.
+        However, many borrowers fail to realize that a gold loan is not just a financial
+        transaction—it is a <strong>legal agreement governed by Indian law</strong>.
+      </p>
+
+      <p>
+        Lack of awareness about borrower rights often leads to panic during repayment
+        delays, fear of lenders, unnecessary auctions, and permanent loss of valuable
+        family gold.
+      </p>
+
+      <p>
+        This blog explains the <strong>legal rights of gold loan borrowers in India</strong>,
+        what lenders can and cannot do, and how you can protect yourself legally and
+        financially.
+      </p>
+
+      <h2>Understanding the Legal Nature of Gold Loans</h2>
+      <p>
+        When you pawn or pledge gold, you enter into a contractual agreement with the
+        lender.
+      </p>
+
+      <h3>Key Legal Characteristics</h3>
+      <ul>
+        <li>You remain the legal owner of the gold</li>
+        <li>The lender holds gold only as security</li>
+        <li>The lender’s rights are limited to loan recovery</li>
+        <li>Gold cannot be sold without following due legal process</li>
+      </ul>
+
+      <p>
+        Gold loans are governed by:
+      </p>
+      <ul>
+        <li>Indian Contract principles</li>
+        <li>Consumer protection laws</li>
+        <li>RBI guidelines (for banks & NBFCs)</li>
+      </ul>
+
+      <p>
+        This means borrowers are <strong>not powerless</strong>, even in default situations.
+      </p>
+
+      <!-- Inline Image -->
+      <div class="blog-inline-image">
+        <img src="images/goldvalue.jpg" alt="Gold Loan Legal Protection India">
+        <span>Gold loans are legally regulated agreements — borrowers have rights</span>
+      </div>
+
+      <h2>Your Right to Clear Information Before Taking a Gold Loan</h2>
+
+      <h3>1. Right to Transparent Loan Terms</h3>
+      <p>
+        Before pledging gold, borrowers have the right to know:
+      </p>
+      <ul>
+        <li>Interest rate (annualized)</li>
+        <li>Loan tenure</li>
+        <li>Repayment structure</li>
+        <li>Penalty charges</li>
+        <li>Auction conditions</li>
+      </ul>
+
+      <p>
+        Lenders must disclose these terms <strong>clearly and in writing</strong>.
+        Hidden clauses or verbal-only promises are not legally valid.
+      </p>
+
+      <h3>2. Right to Fair Gold Valuation</h3>
+      <p>
+        Borrowers have the right to:
+      </p>
+      <ul>
+        <li>Know the purity and weight assessed</li>
+        <li>Understand how loan value is calculated</li>
+        <li>Receive transparent valuation</li>
+      </ul>
+
+      <p>
+        If valuation seems unfair, you may ask for explanation, compare with other lenders,
+        or decline the loan.
+      </p>
+
+      <h2>Your Rights During the Loan Period</h2>
+
+      <h3>3. Right to Receipts & Documentation</h3>
+      <p>
+        Every borrower has the legal right to:
+      </p>
+      <ul>
+        <li>Loan agreement copy</li>
+        <li>Payment receipts</li>
+        <li>Account statements</li>
+      </ul>
+
+      <p>
+        Never rely on verbal confirmation alone. Documentation is your strongest legal
+        protection.
+      </p>
+
+      <h3>4. Right to Repay & Recover Gold Anytime</h3>
+      <p>
+        As a borrower:
+      </p>
+      <ul>
+        <li>You can repay the loan before tenure ends</li>
+        <li>Lenders cannot force continuation</li>
+        <li>Prepayment penalties must be disclosed</li>
+      </ul>
+
+      <p>
+        Once full repayment is made, the lender must return your gold.
+      </p>
+
+      <h2>What Happens If You Miss Payments? (Legal Reality)</h2>
+
+      <h3>5. Right to Notice Before Auction</h3>
+      <p>
+        Before auctioning your gold, lenders must:
+      </p>
+      <ul>
+        <li>Send proper written notice</li>
+        <li>Give reasonable time for repayment</li>
+        <li>Clearly mention auction date</li>
+      </ul>
+
+      <p>
+        Auction without notice is legally questionable.
+      </p>
+
+      <h3>6. Right to Settle Dues Before Auction</h3>
+      <p>
+        Even after receiving an auction notice:
+      </p>
+      <ul>
+        <li>You still have the right to settle dues</li>
+        <li>Gold must be returned if dues are cleared</li>
+        <li>The auction must be stopped</li>
+      </ul>
+
+      <p>
+        This right exists until the gold is actually sold.
+      </p>
+
+      <h2>Your Rights Against Harassment or Unfair Practices</h2>
+
+      <h3>7. Protection from Harassment</h3>
+      <ul>
+        <li>No threats or abuse</li>
+        <li>No repeated home visits</li>
+        <li>No intimidation tactics</li>
+      </ul>
+
+      <p>
+        Borrowers can raise complaints if harassment occurs.
+      </p>
+
+      <h3>8. Right to Fair Auction Process</h3>
+      <p>
+        If auction becomes unavoidable:
+      </p>
+      <ul>
+        <li>Gold must be sold at fair market value</li>
+        <li>The process must be documented</li>
+        <li>Excess amount (if any) should be accounted</li>
+      </ul>
+
+      <p>
+        Lenders cannot secretly sell gold below value.
+      </p>
+
+      <h2>Rights When Dealing With Private Pawn Brokers</h2>
+      <p>
+        Even when dealing with private lenders or pawn brokers:
+      </p>
+      <ul>
+        <li>Written agreement is mandatory</li>
+        <li>Borrower retains ownership</li>
+        <li>Auction must follow agreed terms</li>
+        <li>Gold cannot be misused</li>
+      </ul>
+
+      <p>
+        Lack of regulation does not remove your legal rights.
+      </p>
+
+      <h2>Common Legal Mistakes Borrowers Make</h2>
+      <ul>
+        <li>Ignoring notices</li>
+        <li>Not keeping documents</li>
+        <li>Assuming lenders are always right</li>
+        <li>Waiting until auction day</li>
+        <li>Not seeking professional help</li>
+      </ul>
+
+      <p>
+        Most gold losses happen due to delay—not law.
+      </p>
+
+      <h2>How Professional Gold Recovery Services Help Legally</h2>
+      <p>
+        When borrowers cannot arrange funds, legal rights still exist and auctions can
+        often be prevented.
+      </p>
+
+      <ul>
+        <li>Act before legal deadlines</li>
+        <li>Settle dues with lenders</li>
+        <li>Recover gold legally</li>
+        <li>Operate through written agreements</li>
+      </ul>
+
+      <h2>When Should You Take Legal or Professional Help?</h2>
+      <ul>
+        <li>Auction notice received</li>
+        <li>Interest exceeds gold value</li>
+        <li>Lender is uncooperative</li>
+        <li>You are financially stuck</li>
+      </ul>
+
+      <p>
+        Early action preserves your legal leverage.
+      </p>
+
+      <h2>Important Legal Awareness Tips</h2>
+      <ul>
+        <li>Always read loan agreements</li>
+        <li>Keep copies of all documents</li>
+        <li>Respond to notices immediately</li>
+        <li>Never ignore auction warnings</li>
+        <li>Act before deadlines</li>
+      </ul>
+
+      <h2>2026 Trend: Borrower Awareness Is Increasing</h2>
+      <p>
+        Borrowers are becoming more informed, asking legal questions, protecting assets,
+        and seeking ethical recovery solutions—reducing unnecessary gold loss.
+      </p>
+
+      <h2>Conclusion</h2>
+      <p>
+        Indian law provides strong protections for gold loan borrowers—but rights are
+        useful only when you are aware of them and act in time.
+      </p>
+
+      <p>
+        Gold pledged due to temporary hardship should not be lost permanently due to lack
+        of information. With timely action, your gold can often be saved.
+      </p>
+
+    </article>
+
+    <!-- CTA -->
+    <div class="blog-cta">
+      <h3>Know Your Rights. Protect Your Gold.</h3>
+      <p>
+        If you are facing auction pressure, repayment difficulties, or legal confusion,
+        Sri Krishna Gold Recovery can help you take the right legal and financial steps.
+      </p>
+      <p>
+        📞 <strong>7904325610</strong><br>
+        ✉️ <strong>srikrishnagoldrecovery@gmail.com</strong>
+      </p>
+      <a href="index.html#contact" class="blog-cta-btn">
+        Get Legal Guidance Now
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- ===================================================== Footer ===============================================-->
+  <div id="footer"></div>
+     <div class="container-fliud mt-4 pb-5">
+        <div
+          class="d-flex justify-content-between align-items-center flex-wrap text-center text-md-start"
+        >
+          <p class="mb-0">
+            © <span>Copyright</span>
+            <strong class="px-1 sitename">E2o Tech</strong>
+            <span>All Rights Reserved</span>
+          </p>
+
+          <div class="credits mb-0 text-center text-white d-flex justify-content-center">
+  <p class="mb-0 me-3 text-dark">
+    Made with&nbsp;
+    <svg
+      class="bi bi-suit-heart-fill"
+      xmlns="http://www.w3.org/2000/svg"
+      width="12"
+      height="12"
+      fill="#fd0d0d"
+      viewBox="0 0 16 16">
+      <path
+        d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"
+      ></path>
+    </svg>
+    &nbsp;by&nbsp;
+    <a
+      class="fw-bold text-info"
+      href="https://e2o.in/"
+      target="_blank"
+      >E2o Tech</a
+    >
+  </p>
+</div>
+        </div>
+      </div>
+    <!-- WhatsApp -->
+    <div class="whatsapp_float">
+      <a href="https://wa.me/919881852058">
+        <img src="./images/whatsapp.webp" alt="" />
+      </a>
+    </div>
+    <!-- =================================================== Script Link =============================================-->
+    <script src="./js/Slider.min.js"></script>
+    <script src="https://kit.fontawesome.com/8c8aa2002d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="lightbox-plus-jquery.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

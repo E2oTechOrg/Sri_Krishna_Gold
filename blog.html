@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SiyaRam - Shop the best gold and diamond</title>
+    <link rel="icon" type="image/x-icon" href="./images/lo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="lightbox.css" />
+    <link rel="stylesheet" href="./css/Slider.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+
+    <style>
+        .about-hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("./images/cforg.jpg") center/cover no-repeat;
+  padding: 120px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.about-hero h1 {
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.about-hero p {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #facc15;
+}
+
+.about-section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.about-text p {
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: #374151;
+  margin-bottom: 14px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.blog-section {
+  padding: 80px 20px;
+  background: #f9fafb;
+}
+
+.blog-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.blog-title {
+  font-size: 38px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.blog-subtitle {
+  text-align: center;
+  color: #4b5563;
+  max-width: 750px;
+  margin: 15px auto 60px;
+  line-height: 1.7;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 40px;
+}
+
+.blog-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 28px 60px rgba(0,0,0,0.12);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.blog-content {
+  padding: 26px;
+}
+
+.blog-content h3 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+.blog-content p {
+  font-size: 15px;
+  color: #374151;
+  line-height: 1.7;
+}
+
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+    </style>
+    <!-- =================================================== Navbar =================================================-->
+      <nav class="navbar">
+  <!-- Mobile Sidebar -->
+  <ul class="sidebar">
+    <li onclick="hideSidebar()">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+        </svg>
+      </a>
+    </li>
+
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="service.html">Services</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li> <a href="index.html#contact">Contact</a></li>
+  </ul>
+
+  <!-- Main Navbar -->
+  <ul>
+    <!-- Logo -->
+    <li>
+      <a href="index.html">
+        <img src="./images/logo.png" alt="Logo" />
+      </a>
+    </li>
+
+    <!-- Desktop Links -->
+    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+    <li class="hideOnMobile"><a href="about.html">About</a></li>
+    <li class="hideOnMobile"><a href="service.html">Services</a></li>
+    <li class="hideOnMobile"><a href="blog.html">Blog</a></li>
+    <li class="hideOnMobile"> <a href="index.html#contact">Contact</a></li>
+
+    <!-- Mobile Menu Button -->
+    <li class="menu-button" onclick="showSidebar()">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+<section class="about-hero">
+  <div class="about-hero-content">
+        <h1>Our Blog</h1>
+
+    <p>
+      A Name Built on Trust, Transparency & Responsibility
+    </p>
+  </div>
+</section>
+
+<section class="blog-section">
+  <div class="blog-container">
+    <h1 class="blog-title">Our Blog</h1>
+    <p class="blog-subtitle">
+      Insights, legal guidance, and expert knowledge on gold loans, recovery, and financial safety in India
+    </p>
+
+    <div class="blog-grid">
+
+     <!-- Blog 1 -->
+<a href="The Ultimate Guide to Gold Pawn & Pledge Recovery in India (2026 Edition).html" class="blog-link">
+  <article class="blog-card">
+    <img src="images/goldloan.jpg" alt="Gold Pawn & Pledge Recovery in India">
+    <div class="blog-content">
+      <h3>The Ultimate Guide to Gold Pawn & Pledge Recovery in India (2026 Edition)</h3>
+      <p>
+        Gold is more than just an ornament — in India, it represents financial security,
+        cultural heritage, and long-term wealth. This guide explains how pawned and pledged
+        gold can be recovered safely and legally.
+      </p>
+    </div>
+  </article>
+</a>
+
+      <!-- Blog 2 -->
+       <a href="How to Avoid Losing Your Pawned or Pledged Gold in India – A Complete Guide.html" class="blog-link">
+      <article class="blog-card">
+        <img src="images/goldpawn.jpg" alt="Avoid Losing Pawned Gold in India">
+        <div class="blog-content">
+          <h3>How to Avoid Losing Your Pawned or Pledged Gold in India – A Complete Guide</h3>
+          <p>
+            Many borrowers lose their gold due to missed payments and lack of awareness.
+            Learn how to prevent auctions and protect your family gold.
+          </p>
+        </div>
+      </article></a>
+
+      <!-- Blog 3 -->
+       <a href="Gold Loan vs Personal Loan in India – Which Is Better in 2026.html" class="blog-link">
+      <article class="blog-card">
+        <img src="images/goldsecure.jpg" alt="Gold Loan vs Personal Loan India">
+        <div class="blog-content">
+          <h3>Gold Loan vs Personal Loan in India – Which Is Better in 2026?</h3>
+          <p>
+            Choosing between a gold loan and a personal loan can significantly impact your
+            finances. This comparison helps you decide wisely.
+          </p>
+        </div>
+      </article></a>
+
+      <!-- Blog 4 -->
+       <a href="Legal Rights of Gold Loan Borrowers in India – What Every Borrower Must Know.html" class="blog-link">
+      <article class="blog-card">
+        <img src="images/pledge.webp" alt="Legal Rights of Gold Loan Borrowers">
+        <div class="blog-content">
+          <h3>Legal Rights of Gold Loan Borrowers in India – What Every Borrower Must Know</h3>
+          <p>
+            Gold loans are legal agreements governed by Indian law.
+            Understand your rights and protections as a borrower.
+          </p>
+        </div>
+      </article></a>
+
+
+      <!-- Blog 5 -->
+       <a href="What Happens When Gold Loan Interest Becomes Unmanageable – CausesRisksSolutions.html" class="blog-link">
+      <article class="blog-card">
+        <img src="images/goldvalue.jpg" alt="Unmanageable Gold Loan Interest">
+        <div class="blog-content">
+          <h3>What Happens When Gold Loan Interest Becomes Unmanageable – Causes, Risks & Solutions</h3>
+          <p>
+            Rising interest can trap borrowers in long-term debt.
+            Learn how to identify risks early and regain control.
+          </p>
+        </div>
+      </article></a>
+
+      <!-- Blog 6 -->
+       <a href="Gold Auction Process Explained in India.html" class="blog-link">
+      <article class="blog-card">
+        <img src="images/gold.png" alt="Gold Auction Process India">
+        <div class="blog-content">
+          <h3>Gold Auction Process Explained in India – How to Stop It Legally & Safely</h3>
+          <p>
+            Auctions are not sudden. This blog explains the process and
+            how timely action can help stop gold auctions legally.
+          </p>
+        </div>
+      </article></a>
+
+      <!-- Blog 7 -->
+       <a href="What Borrowers.html" class="blog-link">
+      <article class="blog-card">
+        <img src="images/cforg.jpg" alt="Gold Valuation Myths in India">
+        <div class="blog-content">
+          <h3>Gold Valuation Myths & Facts in India – What Borrowers Must Really Know</h3>
+          <p>
+            Many decisions are based on myths about gold value.
+            Understand the real factors that affect valuation.
+          </p>
+        </div>
+      </article></a>
+
+      <!-- Blog 8 -->
+       <a href="Common Mistakes People Make With Gold Loans in India.html" class="blog-link">
+      <article class="blog-card">
+        <img src="images/cforg2.jpg" alt="Gold Loan Mistakes India">
+        <div class="blog-content">
+          <h3>Common Mistakes People Make With Gold Loans in India – And How to Avoid Them</h3>
+          <p>
+            Easy access to gold loans often leads to costly mistakes.
+            Learn how to avoid financial stress and gold loss.
+          </p>
+        </div>
+      </article></a>
+
+      <!-- Blog 9 -->
+       <a href="How Businesses Use Gold Recovery to Manage.html" class="blog-link">
+      <article class="blog-card">
+        <img src="images/cforg41.jpg" alt="Gold Recovery for Business Cash Flow">
+        <div class="blog-content">
+          <h3>How Businesses Use Gold Recovery to Manage Cash Flow in India</h3>
+          <p>
+            MSMEs and traders use gold recovery to bridge cash gaps.
+            Discover how businesses manage liquidity smartly.
+          </p>
+        </div>
+      </article></a>
+
+      <!-- Blog 10 -->
+       <a href="Is Gold Recovery Legal in India.html" class="blog-link">
+      <article class="blog-card">
+        <img src="images/cash_for_gold.jpg" alt="Is Gold Recovery Legal in India">
+        <div class="blog-content">
+          <h3>Is Gold Recovery Legal in India? Complete Compliance & Legal Guide (2026)</h3>
+          <p>
+            Gold recovery is legal when done ethically and transparently.
+            This guide explains the legal framework in India.
+          </p>
+        </div>
+      </article></a>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- ===================================================== Footer ===============================================-->
+  <div id="footer"></div>
+     <div class="container-fliud mt-4 pb-5">
+        <div
+          class="d-flex justify-content-between align-items-center flex-wrap text-center text-md-start"
+        >
+          <p class="mb-0">
+            © <span>Copyright</span>
+            <strong class="px-1 sitename">E2o Tech</strong>
+            <span>All Rights Reserved</span>
+          </p>
+
+          <div class="credits mb-0 text-center text-white d-flex justify-content-center">
+  <p class="mb-0 me-3 text-dark">
+    Made with&nbsp;
+    <svg
+      class="bi bi-suit-heart-fill"
+      xmlns="http://www.w3.org/2000/svg"
+      width="12"
+      height="12"
+      fill="#fd0d0d"
+      viewBox="0 0 16 16">
+      <path
+        d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"
+      ></path>
+    </svg>
+    &nbsp;by&nbsp;
+    <a
+      class="fw-bold text-info"
+      href="https://e2o.in/"
+      target="_blank"
+      >E2o Tech</a
+    >
+  </p>
+</div>
+        </div>
+      </div>
+    <!-- WhatsApp -->
+    <div class="whatsapp_float">
+      <a href="https://wa.me/919881852058">
+        <img src="./images/whatsapp.webp" alt="" />
+      </a>
+    </div>
+    <!-- =================================================== Script Link =============================================-->
+    <script src="./js/Slider.min.js"></script>
+    <script src="https://kit.fontawesome.com/8c8aa2002d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="lightbox-plus-jquery.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
