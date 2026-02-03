@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SiyaRam - Shop the best gold and diamond</title>
+    <link rel="icon" type="image/x-icon" href="./images/lo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="lightbox.css" />
+    <link rel="stylesheet" href="./css/Slider.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+
+    <style>
+        .about-hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url("./images/about-hero.jpg") center/cover no-repeat;
+  padding: 120px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.about-hero h1 {
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.about-hero p {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #facc15;
+}
+
+.about-section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.about-text p {
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: #374151;
+  margin-bottom: 14px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Section */
+.skr-services-cards {
+  max-width: 1280px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+/* Grid */
+.skr-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 40px;
+}
+
+/* Card */
+.skr-service-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.skr-service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.12);
+}
+
+/* Image */
+.skr-card-img {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.skr-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Content */
+.skr-card-content {
+  padding: 28px 30px 32px;
+  flex: 1;
+}
+
+/* Title */
+.skr-card-content h4 {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+/* Subtitle */
+.skr-card-content > p {
+  font-size: 15px;
+  color: #4b5563;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+/* List */
+.skr-card-content ul {
+  list-style: disc;
+  padding-left: 18px;
+  margin-bottom: 18px;
+}
+
+.skr-card-content ul li {
+  font-size: 15px;
+  color: #374151;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* Check line */
+.skr-checks {
+  font-size: 14px;
+  font-weight: 600;
+  color: #047857;
+  margin-top: auto;
+}
+
+/* CTA Section */
+.skr-services-cta {
+  margin-top: 90px;
+  background: #111827;
+  padding: 80px 30px;
+  border-radius: 28px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.skr-services-cta h3 {
+  font-size: 34px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.skr-services-cta p {
+  font-size: 17px;
+  color: #d1d5db;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  line-height: 1.7;
+}
+
+.skr-cta-btn {
+  display: inline-block;
+  padding: 16px 38px;
+  background: #facc15;
+  color: #000;
+  font-weight: 800;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skr-cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(250, 204, 21, 0.45);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skr-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skr-card-img {
+    height: 200px;
+  }
+
+  .skr-services-cta h3 {
+    font-size: 28px;
+  }
+}
+
+    </style>
+    <!-- =================================================== Navbar =================================================-->
+    <nav class="navbar">
+  <!-- Mobile Sidebar -->
+  <ul class="sidebar">
+    <li onclick="hideSidebar()">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+        </svg>
+      </a>
+    </li>
+
+    <li><a href="#">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="service.html">Services</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+  <!-- Main Navbar -->
+  <ul>
+    <!-- Logo -->
+    <li>
+      <a href="index.html">
+        <img src="./images/logo.png" alt="Logo" />
+      </a>
+    </li>
+
+    <!-- Desktop Links -->
+    <li class="hideOnMobile"><a href="#">Home</a></li>
+    <li class="hideOnMobile"><a href="about.html">About</a></li>
+    <li class="hideOnMobile"><a href="service.html">Services</a></li>
+    <li class="hideOnMobile"><a href="#">Blog</a></li>
+    <li class="hideOnMobile"><a href="#">Contact</a></li>
+
+    <!-- Mobile Menu Button -->
+    <li class="menu-button" onclick="showSidebar()">
+      <a href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<section class="about-hero">
+  <div class="about-hero-content">
+    <h1>Our Services, Sri Krishna Gold Recovery</h1>
+    <p>
+      Complete Gold Recovery & Financial Support Solutions
+    </p>
+  </div>
+</section>
+
+
+
+<section class="skr-services-cards">
+
+ 
+
+  <div class="skr-cards-grid">
+
+    <!-- Card 1 -->
+    <div class="skr-service-card">
+      <div class="skr-card-img">
+        <img src="./images/goldpawn.jpg" alt="Gold Pawn Recovery">
+      </div>
+      <div class="skr-card-content">
+        <h4>1. Gold Pawn Recovery Services</h4>
+        <p>Recover Gold Pawned with Banks & Private Lenders</p>
+        <ul>
+          <li>Assess pawn agreement terms</li>
+          <li>Calculate outstanding principal & interest</li>
+          <li>Provide required financial support</li>
+          <li>Coordinate secure gold release</li>
+          <li>Ensure transparent settlement</li>
+        </ul>
+        <p class="skr-checks">✔ Legal process &nbsp; ✔ Clear agreements &nbsp; ✔ Confidential handling</p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="skr-service-card">
+      <div class="skr-card-img">
+        <img src="./images/pledge.webp" alt="Gold Pledge Recovery">
+      </div>
+      <div class="skr-card-content">
+        <h4>2. Gold Pledge Recovery Services</h4>
+        <p>Financial Assistance to Release Pledged Gold</p>
+        <ul>
+          <li>Pledge verification & evaluation</li>
+          <li>Market-based gold valuation</li>
+          <li>Financial assistance for release</li>
+          <li>Ethical percentage-based returns</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="skr-service-card">
+      <div class="skr-card-img">
+        <img src="./images/goldloan.jpg" alt="Gold Mortgage Recovery">
+      </div>
+      <div class="skr-card-content">
+        <h4>3. Gold Mortgage Recovery Services</h4>
+        <p>Recover Gold Mortgaged Under Long-Term Obligations</p>
+        <ul>
+          <li>Review mortgage terms</li>
+          <li>Analyze dues & recovery feasibility</li>
+          <li>Provide financial assistance</li>
+          <li>Ensure legal compliance</li>
+          <li>Complete secure gold recovery</li>
+        </ul>
+        <p class="skr-checks">✔ Suitable for individuals & businesses &nbsp; ✔ Strict confidentiality</p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="skr-service-card">
+      <div class="skr-card-img">
+        <img src="./images/goldsecure.jpg" alt="Gold Security Recovery">
+      </div>
+      <div class="skr-card-content">
+        <h4>4. Gold Under Security / Collateral Recovery</h4>
+        <p>Recover Gold Held as Security or Collateral</p>
+        <ul>
+          <li>Security agreement evaluation</li>
+          <li>Outstanding amount settlement</li>
+          <li>Secure release of gold assets</li>
+          <li>Transparent revenue sharing</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="skr-service-card">
+      <div class="skr-card-img">
+        <img src="./images/goldvalue.jpg" alt="Gold Valuation">
+      </div>
+      <div class="skr-card-content">
+        <h4>5. Gold Valuation & Feasibility Assessment</h4>
+        <p>Accurate Valuation Before Recovery Decisions</p>
+        <ul>
+          <li>Gold purity verification</li>
+          <li>Weight & market value analysis</li>
+          <li>Recovery cost vs benefit evaluation</li>
+          <li>Transparent financial explanation</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+   <!-- CTA -->
+  <div class="skr-services-cta">
+    <h3>Need Help Recovering Your Gold?</h3>
+    <p>
+      Let our experts guide you through a safe, ethical, and transparent recovery process.
+    </p>
+    <a href="#" class="skr-cta-btn">Book a Confidential Consultation</a>
+  </div>
+
+</section>
+
+
+    <!-- ===================================================== Footer ===============================================-->
+  <div id="footer"></div>
+    <div class="copyrightText">
+      <p>Copyright 2023 Online Tutorials. All Rights Reserved.</p>
+    </div>
+    <!-- WhatsApp -->
+    <div class="whatsapp_float">
+      <a href="https://wa.me/919881852058">
+        <img src="./images/whatsapp.webp" alt="" />
+      </a>
+    </div>
+    <!-- =================================================== Script Link =============================================-->
+    <script src="./js/Slider.min.js"></script>
+    <script src="https://kit.fontawesome.com/8c8aa2002d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="lightbox-plus-jquery.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
