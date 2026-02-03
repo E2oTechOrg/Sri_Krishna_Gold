@@ -65,6 +65,50 @@
   border-radius: 16px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
+.disclaimer-section {
+  padding: 80px 20px;
+  background: #f9fafb;
+}
+
+.disclaimer-container {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  padding: 50px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.disclaimer-container h1 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.disclaimer-container h2 {
+  font-size: 20px;
+  color: #b8860b;
+  margin-bottom: 30px;
+}
+
+.disclaimer-container h3 {
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.disclaimer-container p,
+.disclaimer-container li {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #374151;
+}
+
+.disclaimer-container ul {
+  padding-left: 20px;
+}
+
+
 
 @media (max-width: 900px) {
   .about-grid {
@@ -72,122 +116,9 @@
   }
 }
 
-.difference-section {
-  background: #f9fafb;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.difference-section h2 {
-  font-size: 32px;
-  margin-bottom: 40px;
-}
-
-.difference-grid {
-  max-width: 1000px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-}
-
-.diff-card {
-  background: #fff;
-  padding: 22px;
-  border-radius: 14px;
-  font-weight: 600;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-.vm-section {
-  padding: 80px 20px;
-}
-
-.vm-grid {
-  max-width: 1000px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
-
-.vm-box {
-  background: #fff;
-  padding: 30px;
-  border-radius: 16px;
-  border-left: 6px solid #d4af37;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-}
-
-.vm-box h3 {
-  font-size: 24px;
-  margin-bottom: 12px;
-}
-
-.vm-box p {
-  font-size: 15px;
-  line-height: 1.7;
-}
-
-@media (max-width: 768px) {
-  .vm-grid {
-    grid-template-columns: 1fr;
-  }
-}
-.founder-section {
-  background: linear-gradient(135deg, #111827, #1f2933);
-  padding: 90px 20px;
-  color: #fff;
-  text-align: center;
-}
-
-.founder-box {
-  max-width: 900px;
-  margin: auto;
-}
-
-.founder-box h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.quote {
-  font-size: 18px;
-  font-style: italic;
-  color: #facc15;
-  margin-bottom: 20px;
-}
-
-.founder-box p {
-  font-size: 15.5px;
-  line-height: 1.8;
-  margin-bottom: 12px;
-}
-
-.values-section {
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.values-grid {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.values-grid span {
-  background: #fff;
-  padding: 14px 24px;
-  border-radius: 30px;
-  font-weight: 600;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-}
-
-
     </style>
     <!-- =================================================== Navbar =================================================-->
-    <nav class="navbar">
+     <nav class="navbar">
   <!-- Mobile Sidebar -->
   <ul class="sidebar">
     <li onclick="hideSidebar()">
@@ -235,7 +166,8 @@
 
 <section class="about-hero">
   <div class="about-hero-content">
-    <h1>About Sri Krishna Gold Recovery</h1>
+        <h1>Disclaimer</h1>
+
     <p>
       A Name Built on Trust, Transparency & Responsibility
     </p>
@@ -243,94 +175,41 @@
 </section>
 
 
-<section class="about-section">
-  <div class="about-grid">
-    <div class="about-text">
-      <h2>Who We Are</h2>
-      <p>
-        Sri Krishna Gold Recovery is a specialized financial service organization
-        dedicated to recovering gold assets held under pawn, pledge, mortgage,
-        or security agreements.
-      </p>
-      <p>
-        Gold is not just a metal—it represents hard-earned savings, family
-        security, and future stability. When circumstances force people to
-        pledge their gold, reclaiming it often becomes difficult.
-      </p>
-      <p>
-        We were founded to bridge this gap responsibly through legal,
-        confidential, and ethical financial assistance.
-      </p>
-    </div>
+<section class="disclaimer-section">
+  <div class="disclaimer-container">
+    <h1>Disclaimer</h1>
+    <h2>Important Legal Notice</h2>
 
-    <div class="about-image">
-      <img src="./images/cforg.jpg" alt="Gold Recovery Process">
-    </div>
-  </div>
-</section>
+    <ul>
+      <li>Sri Krishna Gold Recovery does not provide loans or interest-based lending</li>
+      <li>We do not guarantee profit, returns, or market value appreciation</li>
+      <li>Gold valuation is based on prevailing market conditions at the time of assessment</li>
+      <li>
+        All services are subject to mutual agreement, due diligence, and legal verification
+      </li>
+      <li>
+        Website content is provided for informational purposes only and does not constitute
+        legal or financial advice
+      </li>
+    </ul>
 
-   <section class="difference-section">
-  <h2>What Makes Us Different</h2>
+    <h3>Limitation of Liability</h3>
+    <p>Sri Krishna Gold Recovery shall not be liable for:</p>
+    <ul>
+      <li>Market risks or price fluctuations</li>
+      <li>Changes in laws, regulations, or government policies</li>
+      <li>Acts beyond reasonable control, including force majeure events</li>
+    </ul>
 
-  <div class="difference-grid">
-    <div class="diff-card">Ethical & transparent business practices</div>
-    <div class="diff-card">Clear written agreements</div>
-    <div class="diff-card">Strict customer confidentiality</div>
-    <div class="diff-card">Fair valuation & assessment</div>
-    <div class="diff-card">Long-term relationship approach</div>
-  </div>
-</section>
-
-
-<section class="vm-section">
-  <div class="vm-grid">
-
-    <div class="vm-box">
-      <h3>Our Vision</h3>
-      <p>
-        To become the most trusted gold recovery partner, known for ethical
-        practices, transparency, and customer-first solutions.
-      </p>
-    </div>
-
-    <div class="vm-box">
-      <h3>Our Mission</h3>
-      <p>
-        Recovering gold legally and safely, providing responsible financial
-        support, maintaining confidentiality, and educating clients clearly.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<section class="founder-section">
-  <div class="founder-box">
-    <h2>A Message from the Founder</h2>
-    <p class="quote">
-      “No one should permanently lose their gold due to temporary financial difficulty.”
-    </p>
+    <h3>Final Legal Statement</h3>
     <p>
-      Sri Krishna Gold Recovery was created to offer a clear, honest, and respectful
-      solution. We believe in fair valuation, transparent agreements, and shared success.
-    </p>
-    <p>
-      When you trust us with your gold recovery, we treat it as our own responsibility.
+      By engaging with Sri Krishna Gold Recovery, clients acknowledge that they have read,
+      understood, and agreed to all policies, terms, and disclaimers mentioned on this website.
     </p>
   </div>
 </section>
 
-<section class="values-section">
-  <h2>Our Core Values</h2>
 
-  <div class="values-grid">
-    <span>Integrity</span>
-    <span>Transparency</span>
-    <span>Responsibility</span>
-    <span>Confidentiality</span>
-    <span>Fairness</span>
-  </div>
-</section>
 
 
     <!-- ===================================================== Footer ===============================================-->

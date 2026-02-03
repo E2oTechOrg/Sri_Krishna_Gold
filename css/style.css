@@ -198,6 +198,102 @@ nav li:first-child {
   }
 }
 
+
+/* Container replacement */
+.container-fliud {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Margin & padding utilities replacement */
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.pb-5 {
+  padding-bottom: 3rem;
+}
+
+/* Flex replacement */
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* Text alignment */
+.text-center {
+  text-align: center;
+}
+
+.text-md-start {
+  text-align: left;
+}
+
+/* Typography */
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.me-3 {
+  margin-right: 1rem;
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+/* Footer text styling */
+.sitename {
+  font-weight: 700;
+}
+
+/* Credits section */
+.credits p {
+  font-size: 14px;
+  color: #374151;
+}
+
+.credits a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.text-dark {
+  color: #111827;
+}
+
+.text-info {
+  color: #2563eb;
+}
+
+/* Responsive behavior (Bootstrap md replacement) */
+@media (max-width: 768px) {
+  .text-md-start {
+    text-align: center;
+  }
+
+  .justify-content-between {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
 .service-desc {
   font-size: 14px;
   line-height: 1.6;
